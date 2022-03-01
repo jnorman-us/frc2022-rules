@@ -1,0 +1,136 @@
+{
+	"rules": [
+		{
+			"code": "G101",
+			"name": "Dangerous ROBOTS: not allowed",
+			"description": "Robots whose operation or design is dangerous or unsafe are not permitted",
+			"violation": "If before the match, robot will be barred from participating. During the match, the robot will be DISABLED"
+		}, {
+			"code": "G102",
+			"name": "Robots, stay on the field during the match",
+			"description": "Robots and anything they control may not contact anything outside the field except the terminal...",
+			"violation": "DISABLED"
+		}, {
+			"code": "G103",
+			"name": "Keep your bumpers low",
+			"description": "Bumpers must be in the bumper zone during the match",
+			"violation": "FOUL. If repeated or greater than momentary, DISABLED"
+		}, {
+			"code": "G104",
+			"name": "Keep your bumpers together",
+			"description": "Bumpers may not fail or detach from the robot",
+			"violation": "DISABLED"
+		}, {
+			"code": "G105",
+			"name": "Keep it together",
+			"description": "May not intentionally detach or leave parts on the field",
+			"violation": "RED CARD"
+		}, {
+			"code": "G106",
+			"name": "Tall robots in hangar zone only",
+			"description": "Robot height may not exceed the starting configuration height, or exceed climb configuration height in the hangar zone",
+			"violation": "FOUL. TECH FOUL if blocks an opponent's shot or makes a shot. Exceeding during the climb phase makes the robot INELIGIBLE for climb points"
+		}, {
+			"code": "G107",
+			"name": "Don't overextend yourself",
+			"description": "Same as G106, but laterally",
+			"violation": "FOUL, TECH FOUL, ineligible for hangar points"
+		}, {
+			"code": "G108",
+			"name": "Not too high",
+			"description": "Bumpers should never go over the high rung",
+			"violation": "INELIGIBLE for hangar points"
+		}, {
+			"code": "G109",
+			"name": "Avoid the purple plane",
+			"description": "Never extend beyond the purple plane",
+			"violation": "DISABLED"
+		}, {
+			"code": "G201",
+			"name": "Don't expect to gain by doing others harm",
+			"description": "Strategies aimed to forcing the opponent alliance to violate a rule are not allowed. Forced violations will not cound against targeted alliance",
+			"violation": "FOUL. If repeated, TECH FOUL"
+		}, {
+			"code": "G202",
+			"name": "There's a 5-count on PINS",
+			"description": "Robots may not pin a robot for more than 5 seconds. To unpin, separate by 6 feet or move 6 feet away from initial pin. Must wait 3 seconds before pinning the same robot again",
+			"violation": "FOUL. Additional TECH FOUL for every 5 seconds in which the situation is not corrected"
+		}, {
+			"code": "G203",
+			"name": "Don't collude with your partners to shut down major parts of game play",
+			"description": "2 or more robots working together to close off any major element of match play",
+			"violation": "TECH FOUL. Additional TECH FOUL for every 5 seconds in which the situation is not corrected"
+		}, {
+			"code": "G204",
+			"name": "Stay out of other robots",
+			"description": "A robot may not use a component outside its frame perimeter (i.e. an arm) to initiate contact with oponent robot inside the vertical projection of that oponents frame perimited",
+			"violation": "FOUL"
+		}, {
+			"code": "G205",
+			"name": "This isn't combat robotics",
+			"description": "A robot may not damage or functionally impair an opponent robot",
+			"violation": "TECH FOUL and YELLOW CARD. If opponent is unable to drive, TECH FOUL and RED CARD"
+		}, {
+			"code": "G206",
+			"name": "Don't tip or entangle",
+			"description": "A robot may not deliberately tip or entangle with an opponent robot",
+			"violation": "TECH FOUL and YELLOW CARD. If continuous and opponent is unable to drive, TECH FOUL and RED CARD"
+		}, {
+			"code": "G207",
+			"name": "Let them shoot",
+			"description": "A robot may not contact an opponent robot whose bumpers are contacting their launch pad",
+			"violation": "FOUL"
+		}, {
+			"code": "G208",
+			"name": "Let them climb",
+			"description": "A robot may not contact a robot contacting their rungs or who are partially in the hangar zone",
+			"violation": "Contacted opponent robot is awarded TRAVERSAL RUNG HANGAR points at the end of the match"
+		}, {
+			"code": "G209",
+			"name": "Don't climb on each other",
+			"description": "A robot may not be fully supported by a partner robot",
+			"violation": "TECH FOUL. If within the hangar, ineligible for hangar points"
+		}, {
+			"code": "G210",
+			"name": "During auto, no defense",
+			"description": "During auto, a robot with any parts on the opposite side of the field may not contact cargo nor an opponent robot",
+			"violation": "TECH FOUL"
+		}, {
+			"code": "G301",
+			"name": "Be careful what you interact with",
+			"description": "Robots are prohibited from from certain following interactions with arena elements",
+			"violation": "Match won't start until corrected. If during a match, TECH FOUL. If during a match and repeated, YELLOW CARD. DISABLED if damage occurs"
+		}, {
+			"code": "G302",
+			"name": "Lower exits are off limits",
+			"description": "Robots may not reach into or straddle the lower exit",
+			"violation": "TECH FOUL. If continuous or repeated, YELLOW CARD"
+		}, {
+			"code": "G401",
+			"name": "Keep cargo in bounds",
+			"description": "Robots may not eject cargo from the field except through the terminal",
+			"violation": "FOUL per cargo"
+		}, {
+			"code": "G402",
+			"name": "Cargo: use as directed",
+			"description": "Robots may not use cargo to ease or amplify challenges associated with field elements",
+			"violation": "TECH FOUL per cargo"
+		}, {
+			"code": "G403",
+			"name": "2 cargo max",
+			"description": "Robot may not have greater than momentary control of 3 cargo at a time",
+			"violation": "FOUL per additional cargo. YELLOW CARD if egregious"
+		}, {
+			"code": "G404",
+			"name": "Don't hoard opposing cargo",
+			"description": "A robot may not restrict access to more than 3 opposing alliance cargo except during the final 30 seconds of the match",
+			"violation": "FOUL. Additional TECH FOUL for every 5 seconds in which the situation is not corrected"
+		}, {
+			"code": "G405",
+			"name": "Don't catch cargo",
+			"description": "A robot may not repeated score or gain control of cargo released by an upper exit until the cargo contacts anything else besides that robot",
+			"violation": "FOUL per cargo"
+		}
+
+	]
+}
