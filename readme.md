@@ -1,3 +1,4 @@
+
 # CLI 2022 FRC Game Quiz
 I wrote this project to prepare myself for the FIT Waco Districts, where I will be serving as referee. Wish me luck.
 
@@ -20,3 +21,23 @@ If you want to use this program to teach yourself the rules, clone this repo and
 	npm start
 
 From there you will be asked to complete the 59 question exam. Upon completion, the program will tell you which rules to review (you got wrong). It will be fairly difficult starting off, but I'm sure repeatedly taking this quiz will get you to 100%. If you want to reference the rules, visit [here](https://firstfrc.blob.core.windows.net/frc2022/Manual/2022FRCGameManual.pdf).
+
+## Answer Formatting
+The program does expect you to input these answers in a particular format. These are the different penalties, as described in the game manual:
+
+ - Foul
+ - Foul/Cargo
+ - Foul/5 sec
+ - Tech Foul
+ - Tech Foul/Cargo
+ - Tech Foul/5 sec
+ - Verbal warning
+ - Yellow Card
+ - Red Card
+ - Opponent traversal rung hangar points
+ - Ineligible for hangar points
+ - Disabled
+ - Unable to participate
+ - Delay start
+
+ Each rule could have multiple penalties associated with it, so type them out separated by commas.
