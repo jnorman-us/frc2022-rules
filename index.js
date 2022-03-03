@@ -78,6 +78,7 @@ while(indexes.length > 0) {
 if(correctN == ruleN) {
 	console.log(theme_perfect('☆☆☆ You scored 100% ☆☆☆'));
 } else {
+	reviewRules.sort();
 	console.log(theme_wrong(`✖✖✖ You scored ${correctN}/${ruleN}✖✖✖`));
 	console.log(theme_answer(`Review these rules: ${ reviewRules.join()}`));
 }
