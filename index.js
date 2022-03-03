@@ -38,7 +38,7 @@ for(const index in rules) {
 
 // ask the questions
 let correctN = 0;
-let reviewRules = [];
+let reviewRulesArray = [];
 while(indexes.length > 0) {
 	console.log('\n');
 	console.log(theme_progress(`${(ruleN - indexes.length + 1)} / ${ruleN}`));
@@ -65,20 +65,25 @@ while(indexes.length > 0) {
 	}
 	userInputArray.sort();
 
-	if(userInputArray.join() == answerArray.join()) {
+	const answerString = answerArray.join();
+	const userInputString = userInputArray.join();
+
+	if(answerString === userInputString) {
 		console.log(theme_correct('✓ Correct!'));
 		correctN ++;
 	} else {
-		reviewRules.push(code); 
+		reviewRulesArray.push(code); 
 		console.log(theme_wrong('✖ Incorrect!'));
-		console.log(theme_answer(`The correct answer is "${answerArray.join()}"`))
+		console.log(theme_answer(`The correct answer is "${answerString}"`))
 	}
 }
 
 if(correctN == ruleN) {
 	console.log(theme_perfect('☆☆☆ You scored 100% ☆☆☆'));
 } else {
-	reviewRules.sort();
+	reviewRulesArray.sort();
+
+	const reviewRulesString = reviewRulesArray.join();
 	console.log(theme_wrong(`✖✖✖ You scored ${correctN}/${ruleN}✖✖✖`));
-	console.log(theme_answer(`Review these rules: ${ reviewRules.join()}`));
+	console.log(theme_answer(`Review these rules: ${reviewRulesString}`));
 }
