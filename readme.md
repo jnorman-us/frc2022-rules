@@ -40,4 +40,4 @@ The program does expect you to input these answers in a particular format. These
  - Unable to participate
  - Delay start
 
- Each rule could have multiple penalties associated with it, so type them out separated by commas.
+Each rule could have multiple penalties associated with it, so type them out separated by commas.
