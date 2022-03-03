@@ -1,135 +1,451 @@
 {
-	"rules": [
-		{
+	"rules": [{
 			"code": "G101",
 			"name": "Dangerous ROBOTS: not allowed",
 			"description": "Robots whose operation or design is dangerous or unsafe are not permitted",
-			"violation": "If before the match, robot will be barred from participating. During the match, the robot will be DISABLED"
+			"violation": [
+				"UNABLE TO PARTICIPATE",
+				"DISABLED"
+			]
 		}, {
 			"code": "G102",
 			"name": "Robots, stay on the field during the match",
 			"description": "Robots and anything they control may not contact anything outside the field except the terminal...",
-			"violation": "DISABLED"
+			"violation": [
+				"DISABLED"
+			]
 		}, {
 			"code": "G103",
 			"name": "Keep your bumpers low",
 			"description": "Bumpers must be in the bumper zone during the match",
-			"violation": "FOUL. If repeated or greater than momentary, DISABLED"
+			"violation": [
+				"FOUL",
+				"DISABLED"
+			]
 		}, {
 			"code": "G104",
 			"name": "Keep your bumpers together",
 			"description": "Bumpers may not fail or detach from the robot",
-			"violation": "DISABLED"
+			"violation": [
+				"DISABLED"
+			]
 		}, {
 			"code": "G105",
 			"name": "Keep it together",
 			"description": "May not intentionally detach or leave parts on the field",
-			"violation": "RED CARD"
+			"violation": [
+				"RED CARD"
+			]
 		}, {
 			"code": "G106",
 			"name": "Tall robots in hangar zone only",
 			"description": "Robot height may not exceed the starting configuration height, or exceed climb configuration height in the hangar zone",
-			"violation": "FOUL. TECH FOUL if blocks an opponent's shot or makes a shot. Exceeding during the climb phase makes the robot INELIGIBLE for climb points"
+			"violation": [
+				"FOUL",
+				"TECH FOUL",
+				"INELIGIBLE FOR HANGAR POINTS"
+			]
 		}, {
 			"code": "G107",
 			"name": "Don't overextend yourself",
 			"description": "Same as G106, but laterally",
-			"violation": "FOUL, TECH FOUL, ineligible for hangar points"
+			"violation": [
+				"FOUL",
+				"TECH FOUL",
+				"INELIGIBLE FOR HANGAR POINTS"
+			]
 		}, {
 			"code": "G108",
 			"name": "Not too high",
 			"description": "Bumpers should never go over the high rung",
-			"violation": "INELIGIBLE for hangar points"
+			"violation": [
+				"INELIGIBLE FOR HANGAR POINTS"
+			]
 		}, {
 			"code": "G109",
 			"name": "Avoid the purple plane",
 			"description": "Never extend beyond the purple plane",
-			"violation": "DISABLED"
+			"violation": [
+				"DISABLED"
+			]
 		}, {
 			"code": "G201",
 			"name": "Don't expect to gain by doing others harm",
 			"description": "Strategies aimed to forcing the opponent alliance to violate a rule are not allowed. Forced violations will not cound against targeted alliance",
-			"violation": "FOUL. If repeated, TECH FOUL"
+			"violation": [
+				"FOUL",
+				"TECH FOUL"
+			]
 		}, {
 			"code": "G202",
 			"name": "There's a 5-count on PINS",
 			"description": "Robots may not pin a robot for more than 5 seconds. To unpin, separate by 6 feet or move 6 feet away from initial pin. Must wait 3 seconds before pinning the same robot again",
-			"violation": "FOUL. Additional TECH FOUL for every 5 seconds in which the situation is not corrected"
+			"violation": [
+				"FOUL",
+				"TECH FOUL/5 SEC"
+			]
 		}, {
 			"code": "G203",
 			"name": "Don't collude with your partners to shut down major parts of game play",
 			"description": "2 or more robots working together to close off any major element of match play",
-			"violation": "TECH FOUL. Additional TECH FOUL for every 5 seconds in which the situation is not corrected"
+			"violation": [
+				"TECH FOUL",
+				"TECH FOUL/5 SEC"
+			]
 		}, {
 			"code": "G204",
 			"name": "Stay out of other robots",
 			"description": "A robot may not use a component outside its frame perimeter (i.e. an arm) to initiate contact with oponent robot inside the vertical projection of that oponents frame perimited",
-			"violation": "FOUL"
+			"violation": [
+				"FOUL"
+			]
 		}, {
 			"code": "G205",
 			"name": "This isn't combat robotics",
 			"description": "A robot may not damage or functionally impair an opponent robot",
-			"violation": "TECH FOUL and YELLOW CARD. If opponent is unable to drive, TECH FOUL and RED CARD"
+			"violation": [
+				"TECH FOUL",
+				"YELLOW CARD",
+				"RED CARD"
+			]
 		}, {
 			"code": "G206",
 			"name": "Don't tip or entangle",
 			"description": "A robot may not deliberately tip or entangle with an opponent robot",
-			"violation": "TECH FOUL and YELLOW CARD. If continuous and opponent is unable to drive, TECH FOUL and RED CARD"
+			"violation": [
+				"TECH FOUL",
+				"YELLOW CARD",
+				"RED CARD"
+			]
 		}, {
 			"code": "G207",
 			"name": "Let them shoot",
 			"description": "A robot may not contact an opponent robot whose bumpers are contacting their launch pad",
-			"violation": "FOUL"
+			"violation": [
+				"FOUL"
+			]
 		}, {
 			"code": "G208",
 			"name": "Let them climb",
 			"description": "A robot may not contact a robot contacting their rungs or who are partially in the hangar zone",
-			"violation": "Contacted opponent robot is awarded TRAVERSAL RUNG HANGAR points at the end of the match"
+			"violation": [
+				"OPPONENT TRAVERSAL RUNG HANGAR POINTS"
+			]
 		}, {
 			"code": "G209",
 			"name": "Don't climb on each other",
 			"description": "A robot may not be fully supported by a partner robot",
-			"violation": "TECH FOUL. If within the hangar, ineligible for hangar points"
+			"violation": [
+				"TECH FOUL",
+				"INELIGIBLE FOR HANGAR POINTS"
+			]
 		}, {
 			"code": "G210",
 			"name": "During auto, no defense",
 			"description": "During auto, a robot with any parts on the opposite side of the field may not contact cargo nor an opponent robot",
-			"violation": "TECH FOUL"
+			"violation": [
+				"TECH FOUL"
+			]
 		}, {
 			"code": "G301",
 			"name": "Be careful what you interact with",
 			"description": "Robots are prohibited from from certain following interactions with arena elements",
-			"violation": "Match won't start until corrected. If during a match, TECH FOUL. If during a match and repeated, YELLOW CARD. DISABLED if damage occurs"
+			"violation": [
+				"TECH FOUL",
+				"YELLOW CARD",
+				"DISABLED"
+			]
 		}, {
 			"code": "G302",
 			"name": "Lower exits are off limits",
 			"description": "Robots may not reach into or straddle the lower exit",
-			"violation": "TECH FOUL. If continuous or repeated, YELLOW CARD"
+			"violation": [
+				"TECH FOUL",
+				"YELLOW CARD"
+			]
 		}, {
 			"code": "G401",
 			"name": "Keep cargo in bounds",
 			"description": "Robots may not eject cargo from the field except through the terminal",
-			"violation": "FOUL per cargo"
+			"violation": [
+				"FOUL/CARGO"
+			]
 		}, {
 			"code": "G402",
 			"name": "Cargo: use as directed",
 			"description": "Robots may not use cargo to ease or amplify challenges associated with field elements",
-			"violation": "TECH FOUL per cargo"
+			"violation": [
+				"TECH FOUL/CARGO"
+			]
 		}, {
 			"code": "G403",
 			"name": "2 cargo max",
 			"description": "Robot may not have greater than momentary control of 3 cargo at a time",
-			"violation": "FOUL per additional cargo. YELLOW CARD if egregious"
+			"violation": [
+				"FOUL/CARGO",
+				"YELLOW CARD"
+			]
 		}, {
 			"code": "G404",
 			"name": "Don't hoard opposing cargo",
 			"description": "A robot may not restrict access to more than 3 opposing alliance cargo except during the final 30 seconds of the match",
-			"violation": "FOUL. Additional TECH FOUL for every 5 seconds in which the situation is not corrected"
+			"violation": [
+				"FOUL",
+				"TECH FOUL/5 SEC"
+			]
 		}, {
 			"code": "G405",
 			"name": "Don't catch cargo",
 			"description": "A robot may not repeated score or gain control of cargo released by an upper exit until the cargo contacts anything else besides that robot",
-			"violation": "FOUL per cargo"
+			"violation": [
+				"FOUL/CARGO"
+			]
+		}, {
+			"code": "H101",
+			"name": "Be a good person",
+			"description": "All teams must be civil toward everyone and respectful of team and event equipment while at a FIRST Robotics Competition",
+			"violation": [
+				"VERBAL WARNING",
+				"YELLOW CARD",
+				"RED CARD"
+
+			]
+		}, {
+			"code": "H102",
+			"name": "Enter only 1 robot",
+			"description": "Each registered FRC team may enter only 1 robot into the event",
+			"violation": [
+				"VERBAL WARNING"
+			]
+		}, {
+			"code": "H103",
+			"name": "Humans, stay off the field until green",
+			"description": "Team members may only enter the field if the driver station led strings are green, unless explicity instructed by a referee or an FTA",
+			"violation": [
+				"VERBAL WARNING",
+				"YELLOW CARD"
+			]
+		}, {
+			"code": "H104",
+			"name": "Never step over the guardrail",
+			"description": "Team members may only enter or exit the field through open gates",
+			"violation": [
+				"VERBAL WARNING",
+				"YELLOW CARD"
+			]
+		}, {
+			"code": "H105",
+			"name": "Asking other teams to throw a match - not cool",
+			"description": "A team may not encourage an alliance, of which it is not a member, to play beneath its ability",
+			"violation": [
+				"YELLOW CARD",
+				"RED CARD"
+			]
+		}, {
+			"code": "H106",
+			"name": "Letting omeone coerce you in to throwing a match - also not cool",
+			"description": "A team, as the result of encouragement by a team not on their alliance, may not play beneath its ability",
+			"violation": [
+				"YELLOW CARD",
+				"RED CARD"
+			]
+		}, {
+			"code": "H107",
+			"name": "Don't abuse arena access",
+			"description": "Team members granted access to restricted areas in and around the arena may not assist or use signaling devices during the match to assist the drive team. Exceptions will be granted for inconsequential infractions and in cases concering safety.",
+			"violation": [
+				"YELLOW CARD"
+			]
+		}, {
+			"code": "H108",
+			"name": "Be careful what you interact with",
+			"description": "Team members are prohibited from the following actions with regards to interaction with arena elements.",
+			"violation": [
+				"VERBAL WARNING",
+				"YELLOW CARD"
+			]
+		}, {
+			"code": "H201",
+			"name": "Egregious or exceptional violations",
+			"description": "Egregious behavior beyond what is listed in the rules or subsequent violations of any rule or procedure during the event is prohibited.",
+			"violation": [
+				"YELLOW CARD",
+				"RED CARD"
+			]
+		}, {
+			"code": "H202",
+			"name": "1 student, 1 head referee",
+			"description": "A team may only send 1 student from its drive team to address the head referee",
+			"violation": [
+				"VERBAL WARNING"
+			]
+		}, {
+			"code": "H301",
+			"name": "Be prompt/safe when coming to and going from the field",
+			"description": "Drive teams may not cause significant or multiple delays during the event to the start of a match, the field reset after a match, or continuation of matches after a timeout",
+			"violation": [
+				"DISABLED",
+				"YELLOW CARD"
+			]
+		}, {
+			"code": "H302",
+			"name": "Teams may not enable their robots on the field",
+			"description": "Teams may not tehter to the robot while on the field except in special circumstances and with the express permission from the FTA or a referee",
+			"violation": [
+				"YELLOW CARD"
+			]
+		}, {
+			"code": "H303",
+			"name": "You can't bring/use anything you want",
+			"description": "The only equipment that may be brought to the arena and used by drive teams during a match is listend below.",
+			"violation": [
+				"DELAY START",
+				"YELLOW CARD"
+			]
+		}, {
+			"code": "H304",
+			"name": "By invitation only",
+			"description": "Only drive teams for the current match are allowed in their respective alliance areas or terminal areas",
+			"violation": [
+				"DELAY START"
+			]
+		}, {
+			"code": "H305",
+			"name": "Show up to your matches",
+			"description": "Upon each team's robot passing initial, complete inspection, the team must send at least 1 member of its drive team to the arena and participate in each of the team's assigned qualification and playoff matches",
+			"violation": [
+				"RED CARD"
+			]
+		}, {
+			"code": "H306",
+			"name": "Identify yourself",
+			"description": "Drive teams must wear proper identification while in the arena. Proper identification consists of",
+			"violation": [
+				"DELAY START"
+			]
+		}, {
+			"code": "H307",
+			"name": "Plug in to/be in your driver station",
+			"description": "The operator console must be used in the driver station to which the team is assigned, as indicated on the team sign",
+			"violation": [
+				"DELAY START",
+				"DISABLED"
+			]
+		}, {
+			"code": "H308",
+			"name": "Don't bang on the glass",
+			"description": "Team members may never strik or hit the driver station plastic windows",
+			"violation": [
+				"VERBAL WARNING",
+				"YELLOW CARD"
+			]
+		}, {
+			"code": "H309",
+			"name": "Know your robot setup",
+			"description": "When placed on the field for a match, each robot must be in compliance with all robot rules",
+			"violation": [
+				"DELAY START",
+				"DISABLED"
+			]
+		}, {
+			"code": "H310",
+			"name": "Know your drive team positions",
+			"description": "Prior to the start of the match, drive team members must be positioned at their spots",
+			"violation": [
+				"DELAY START"
+			]
+		}, {
+			"code": "H311",
+			"name": "Leave the cargo alone",
+			"description": "Prior to the start of the match, human players may not remove the cargo from the terminal",
+			"violation": [
+				"DELAY START"
+			]
+		}, {
+			"code": "H312",
+			"name": "No cargo shots after the match",
+			"description": "After the end of the match and for the following 10 seconds, drive teams may not enter cargo into the field",
+			"violation": [
+				"FOUL"
+			]
+		}, {
+			"code": "H401",
+			"name": "Behind the lines",
+			"description": "During auto, drive team members staged behind a starting line or terminal starting line may not contact anything in front of those lines, unless for personal or equipment safety or granted permission by a head referee or FTA",
+			"violation": [
+				"FOUL"
+			]
+		}, {
+			"code": "H402",
+			"name": "Disconnect or set down controllers",
+			"description": "Prior to the start of the match, any control devices worn or held by human players and/or drivers must be disconnected from the operator console",
+			"violation": [
+				"DELAY START"
+			]
+		}, {
+			"code": "H403",
+			"name": "Let the robot do its thing",
+			"description": "During auto, drive teams may not directly or indirectly interact with robots or operator consoles unless for personal safety.",
+			"violation": [
+				"FOUL",
+				"YELLOW CARD"
+			]
+		}, {
+			"code": "H404",
+			"name": "Auto cargo delivery",
+			"description": "During auto, cargo may only be introduced to the field by a human player in a terminal area",
+			"violation": [
+				"FOUL/CARGO"
+			]
+		}, {
+			"code": "H501",
+			"name": "Coahces and other teams: hands off the controls",
+			"description": "A robot shall be operated only by the drivers and/or human players of that team",
+			"violation": [
+				"DISABLED"
+			]
+		}, {
+			"code": "H502",
+			"name": "No wandering",
+			"description": "Drivers, coaches, and human players may not contact anything outside the area in which they started the match",
+			"violation": [
+				"FOUL"
+			]
+		}, {
+			"code": "H503",
+			"name": "Coaches, cargo is off limits",
+			"description": "Coaches may not touch cargo, unless for safety purposes",
+			"violation": [
+				"FOUL/CARGO"
+			]
+		}, {
+			"code": "H504",
+			"name": "Teleop cargo delivery",
+			"description": "During teleop, cargo may only be introduced to the field by a human player through the guard",
+			"violation": [
+				"FOUL/CARGO"
+			]
+		}, {
+			"code": "H505",
+			"name": "Opponent cargo is off limits",
+			"description": "During a match, human players may not contact opponent cargo. Inconsequential and momentary contact, and/or contact that is intended to be helpful are exceptions to this rule",
+			"violation": [
+				"FOUL/CARGO"
+			]
+		}, {
+			"code": "H506",
+			"name": "Only feed your alliance robots",
+			"description": "Human players may not deliver their cargo to the opponent robots",
+			"violation": [
+				"FOUL/CARGO"
+			]
+		}, {
+			"code": "H507",
+			"name": "Human players, watch your reach",
+			"description": "Human players may not reach beyond the purple plane",
+			"violation": [
+				"FOUL"
+			]
 		}
 
 	]
